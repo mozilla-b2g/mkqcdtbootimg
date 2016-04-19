@@ -43,6 +43,10 @@
 #endif
 #include "bootimg.h"
 
+#ifdef __APPLE__
+#include <sys/syslimits.h>
+#endif
+
 struct dt_blob;
 
 /*
